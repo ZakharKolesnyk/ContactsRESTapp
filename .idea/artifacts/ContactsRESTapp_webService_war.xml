@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ContactsRESTapp-webService:war">
+    <output-path>$PROJECT_DIR$/ContactsRESTapp-webService/target</output-path>
+    <root id="archive" name="ContactsRESTapp-webService-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ContactsRESTapp-webService:war exploded" />
+    </root>
+  </artifact>
+</component>
