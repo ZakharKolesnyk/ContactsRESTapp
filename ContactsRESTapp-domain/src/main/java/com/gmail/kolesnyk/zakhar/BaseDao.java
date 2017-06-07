@@ -1,5 +1,7 @@
 package com.gmail.kolesnyk.zakhar;
 
+import org.springframework.transaction.annotation.Transactional;
+
 import java.util.List;
 
 /**
@@ -16,6 +18,7 @@ public interface BaseDao<T, I> {
      * @param id ID of Entity
      * @return example of Entity
      */
+    @Transactional(readOnly = true)
     T selectById(I id);
 
     /**
@@ -23,6 +26,7 @@ public interface BaseDao<T, I> {
      *
      * @param object object of Entity
      */
+    @Transactional
     void save(T object);
 
     /**
@@ -30,6 +34,7 @@ public interface BaseDao<T, I> {
      *
      * @param object object of Entity
      */
+    @Transactional
     void update(T object);
 
     /**
@@ -37,6 +42,7 @@ public interface BaseDao<T, I> {
      *
      * @param object object of Entity
      */
+    @Transactional
     void remove(T object);
 
     /**
@@ -44,5 +50,6 @@ public interface BaseDao<T, I> {
      *
      * @return List of Entities
      */
+    @Transactional(readOnly = true)
     List<T> list();
 }

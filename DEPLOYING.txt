@@ -1,0 +1,8 @@
+<root> root of project where is pom.xml
+To run project need to have installed Apache Maven tool.
+1) need to perform sql script into your mySql Server that is in <root>/ContactsRESTapp-domain/src/main/resources/sql/contacts.sql
+2) in <root>/ContactsRESTapp-domain/src/main/resources/db.properties described connection to deployed database,
+    need to change it depending for your environment
+3) in <root> perform command: mvn package
+4) in <root>/target/ will appear "ContactsRESTapp-webService-1.0-SNAPSHOT.war"
+5) this artifact need to deploy into your javaEE server

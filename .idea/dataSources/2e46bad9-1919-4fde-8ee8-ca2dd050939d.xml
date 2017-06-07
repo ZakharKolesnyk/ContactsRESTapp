@@ -28,12 +28,28 @@
     </column>
     <column id="14" parent="11" name="phone">
       <Position>3</Position>
-      <DataType>varchar(16)|0</DataType>
+      <DataType>varchar(32)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="15" parent="11" name="PRIMARY">
+    <index id="15" parent="11" name="users_user_name_uindex">
+      <ColNames>user_name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="16" parent="11" name="users_phone_uindex">
+      <ColNames>phone</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="17" parent="11" name="PRIMARY">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
+    </key>
+    <key id="18" parent="11" name="users_user_name_uindex">
+      <ColNames>user_name</ColNames>
+      <UnderlyingIndexName>users_user_name_uindex</UnderlyingIndexName>
+    </key>
+    <key id="19" parent="11" name="users_phone_uindex">
+      <ColNames>phone</ColNames>
+      <UnderlyingIndexName>users_phone_uindex</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>

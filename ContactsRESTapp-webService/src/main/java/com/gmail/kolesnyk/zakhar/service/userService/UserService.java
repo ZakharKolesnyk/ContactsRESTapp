@@ -2,7 +2,6 @@ package com.gmail.kolesnyk.zakhar.service.userService;
 
 import com.gmail.kolesnyk.zakhar.service.Service;
 import com.gmail.kolesnyk.zakhar.user.User;
-import org.springframework.transaction.annotation.Transactional;
 
 
 /**
@@ -20,7 +19,6 @@ public interface UserService extends Service {
      * @param user example of new User
      * @return example of created User
      */
-    @Transactional
     User create(User user);
 
     /**
@@ -29,7 +27,6 @@ public interface UserService extends Service {
      * @param idUser ID User
      * @return {@link User} example of User
      */
-    @Transactional(readOnly = true)
     User getById(int idUser);
 
     /**
@@ -38,7 +35,6 @@ public interface UserService extends Service {
      * @param name name of User
      * @return {@link User} example of User
      */
-    @Transactional(readOnly = true)
     User getByName(String name);
 
     /**
@@ -47,7 +43,6 @@ public interface UserService extends Service {
      * @param user exmple of User
      * @return example of updated User
      */
-    @Transactional
     User update(User user);
 
     /**
@@ -55,7 +50,12 @@ public interface UserService extends Service {
      *
      * @param user example of User
      */
-    @Transactional
-    boolean delete(User user);
+    void delete(User user);
 
+    /**
+     * method allow to remove {@link User} from system
+     *
+     * @param id ID of User
+     */
+    void delete(Integer id);
 }

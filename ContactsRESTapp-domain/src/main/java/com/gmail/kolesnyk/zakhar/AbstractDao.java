@@ -3,13 +3,13 @@ package com.gmail.kolesnyk.zakhar;
 import org.hibernate.Criteria;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
 import java.util.List;
 
-@Component
+@Repository
 public abstract class AbstractDao<T, I extends Serializable> implements BaseDao<T, I> {
 
     @Autowired

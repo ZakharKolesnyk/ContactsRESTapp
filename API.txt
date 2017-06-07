@@ -1,0 +1,70 @@
+<rootUrl> - context root of the application
+Responses from server in content-type Json.
+Requests from client in content-type Json or without content
+Methods for interaction with Web-Service:
+1) <rootUrl>/add, http-method: POST, content: json,
+used for creating row that contains phone and name of user in database using json object
+    request example JSON:
+        {
+            "userName": "Tom",
+            "phone": "123 122 123"
+        }
+
+    response example JSON:
+        {
+            "id": 1
+            "userName": "Tom",
+            "phone": "123 122 123"
+        }
+
+2) <rootUrl>/id/{id}, http-method: GET, where {id} - ID of user,
+used for getting object with fields "phone" and "userName" that corresponded with table in database using ID of user
+    response example JSON:
+        {
+            "id": 1
+            "userName": "Tom",
+            "phone": "123 122 123"
+        }
+
+3) <rootUrl>/name/{name}, http-method: GET, where {name} - "userName" of user,
+used for getting object with fields "phone" and "userName" that corresponded with table in database using "userName" of user
+    response example JSON:
+        {
+            "id": 1
+            "userName": "Tom",
+            "phone": "123 122 123"
+        }
+
+4) <rootUrl>/update/{id}, http-method: GET, content: json, where {id} - ID of user,
+used for changing fields of object in table of database using ID of user and json object
+    request example JSON:
+        {
+            "userName": "Tom",
+            "phone": "123 122 123"
+        }
+    response example JSON:
+        {
+            "id": 1
+            "userName": "Tom",
+            "phone": "123 122 123"
+        }
+
+5) 2 ways to remove:
+        1. <rootUrl>/del/{id}, http-method: GET, where {id} - ID of user,
+        used for deleting row about user from table of database using ID of user
+            response example JSON:
+                {
+                    "status": "deleting successful"
+                }
+        2. <rootUrl>/del, http-method: GET, content: json,
+        used for deleting row about user from table of database using json object
+            request example JSON:
+                {
+                    "id": 1
+                    "userName": "Tom",
+                    "phone": "123 122 123"
+                }
+            response example JSON:
+                {
+                    "status": "deleting successful"
+                }
