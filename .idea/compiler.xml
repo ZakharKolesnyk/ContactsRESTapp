@@ -6,12 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ContactsRESTapp-client-JavaFX" />
         <module name="ContactsRESTapp-domain" />
         <module name="ContactsRESTapp-webService" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ContactsRESTapp" target="1.8" />
+      <module name="ContactsRESTapp-client-AngularJs" target="1.5" />
+      <module name="ContactsRESTapp-client-JavaFX" target="1.8" />
       <module name="ContactsRESTapp-domain" target="1.8" />
       <module name="ContactsRESTapp-webService" target="1.8" />
       <module name="ContactsRESTappdomain" target="1.5" />

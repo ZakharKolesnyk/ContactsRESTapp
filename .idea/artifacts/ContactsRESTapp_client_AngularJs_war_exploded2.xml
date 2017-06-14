@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ContactsRESTapp-client-AngularJs:war exploded2">
+    <output-path>$PROJECT_DIR$/target/artifacts/ContactsRESTapp_client_AngularJs_war_exploded2</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="ContactsRESTapp-client-AngularJs/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ContactsRESTapp-client-AngularJs" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

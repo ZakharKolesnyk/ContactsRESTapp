@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ContactsRESTapp.iml" filepath="$PROJECT_DIR$/ContactsRESTapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ContactsRESTapp-client-JavaFX/ContactsRESTapp-client-JavaFX.iml" filepath="$PROJECT_DIR$/ContactsRESTapp-client-JavaFX/ContactsRESTapp-client-JavaFX.iml" />
       <module fileurl="file://$PROJECT_DIR$/ContactsRESTapp-domain/ContactsRESTapp-domain.iml" filepath="$PROJECT_DIR$/ContactsRESTapp-domain/ContactsRESTapp-domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/ContactsRESTapp-webService/ContactsRESTapp-webService.iml" filepath="$PROJECT_DIR$/ContactsRESTapp-webService/ContactsRESTapp-webService.iml" />
     </modules>

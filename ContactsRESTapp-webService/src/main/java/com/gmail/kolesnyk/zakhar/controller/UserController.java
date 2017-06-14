@@ -33,7 +33,7 @@ public class UserController {
     }
 
     @ResponseBody
-    @RequestMapping(value = "/update/{id}", method = RequestMethod.PUT, produces = "application/json", consumes = "application/json")
+    @RequestMapping(value = "/update/{id}", method = RequestMethod.PUT, produces = "application/json")
     public User updateUser(@PathVariable Integer id, @RequestBody User user) throws IOException {
         user.setId(id);
         return userService.update(user);
